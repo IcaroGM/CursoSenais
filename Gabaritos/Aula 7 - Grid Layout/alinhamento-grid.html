@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column</title>
+    <style>
+         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: #909090;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        body{
+            margin: 1rem;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns:auto;
+            margin: auto;
+            width: 80%;
+            /* gap: 10px 20px; */
+
+            /* grid-template-rows: 5fr 3fr 1fr; */
+
+            grid-auto-rows: 150px;
+
+            grid-template-areas: 
+            "box-1 box-1 box-1 box-1"
+            "box-2 box-2 box-2 box-3"
+            "box-2 box-2 box-2 box-3"
+            "box-4 box-4 box-4 box-4";
+
+            /* Para alinhar todos os boxes no container, utilizo as propriedades abaixo sendo, justify-content para alinha no eixo horizontal do box e align-items para alinhas no eixo vertical dos boxes */
+            /* justify-content: center; */
+            /* align-items: start; */
+
+        }
+
+        .box-1{
+            grid-area: box-1;
+            /* Posso também alinha cada box separado sendo utilizado o termo self. Justify-self alinha os elementos no eixo horizontal e align-self alinha no eixo vertical */
+            /* justify-self: center; */
+            align-self: start;
+        }
+
+        .box-2{
+            grid-area: box-2;
+            justify-self: start ;
+        }
+
+        .box-3{
+            grid-area: box-3;
+            justify-self: end;
+        }
+
+        .box-4{
+            grid-area: box-4;
+            align-self: center;
+            justify-self: center;
+        }
+
+
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <ul>
+                <li>home</li>
+                <li>contato</li>
+                <li>jogos</li>
+            </ul>
+        </div>
+        <div class="box box-2">
+            <p>teste</p>
+        </div>
+        <div class="box box-3">
+            <p>teste</p>
+        </div>
+        <div class="box box-4">
+            <p>&copy; Victor Alencar</p>
+        </div>
+    </div>
+</body>
+</html>

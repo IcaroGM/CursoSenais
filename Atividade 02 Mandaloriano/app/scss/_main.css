@@ -1,0 +1,19 @@
+
+main{
+    margin-top: 5em;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+table{
+    align-items: center;
+}

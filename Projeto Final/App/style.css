@@ -1,0 +1,151 @@
+:root{
+    /* cores */
+    --Fundo: #DDD3B8; 
+    --CaixaIngrediente: #FF914D;
+    --CaixaTexto: white;
+    --CaixaBotao: #47bae2;
+}
+
+/* Elementos Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+   
+body{
+    background-color: var(--Fundo);
+    background-image: url(/img/Prancheta\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5rem;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem;
+    position: center;
+}
+@media(max-width: 63rem){
+    header{ 
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+footer{
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Elementos específicos */
+
+/* Elementos do Header */
+h1{
+    font-family:'Akronim', cursive;
+    font-size: 10rem;
+    font-weight: 10;
+    color: rgba(56, 2, 117, 0.822);
+}
+
+#CaixaNav{
+    background-color: var(--CaixaIngrediente);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    margin: 2rem;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+/* Elementos do main */
+.CaixaTexto{
+    background-color: var(--CaixaTexto);
+    padding: 1rem;
+    border-radius: 0.50rem;
+    align-items: center;
+}
+    /* Tirando o fundo de alguns elementos  */
+    h2{
+        background-color: rgb(0, 0, 0,0);
+    }
+
+    p{
+        background-color: rgb(0, 0, 0,0);
+    }
+
+    a{
+        background-color: rgb(0, 0, 0,0);
+    }
+
+.contato{
+    display: flex;
+    justify-content: center;
+}
+.container > a{
+    color: black;
+}
+
+/* Caixas dos sabores */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50%,50%;
+    gap: 1rem;
+    text-align: justify;
+    justify-items: center;
+    margin-top: 1.5rem;
+}
+
+.container > div {;
+    margin: 0.5rem;
+}
+
+.img-item{
+    height: 5rem;   
+}
+
+.img-logo{
+    height: 10rem;  
+    width: 10rem; 
+}
+
+@media only screen and (max-width: 500px) {
+    .contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .CaixaTexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+.shop-item{
+    width:fit-content;
+    background-color: var(--CaixaIngrediente)
+}

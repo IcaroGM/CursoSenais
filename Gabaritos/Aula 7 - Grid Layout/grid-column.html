@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column</title>
+    <style>
+         /* É importante lembrar que para fazer o grid-column e o grid-row deve-se criar uma classe unica para cada box */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: #909090;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        body{
+            margin: 1rem;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            margin: auto;
+
+            width: 70vh;
+
+            /* grid-template-rows: 5fr 3fr 1fr; */
+
+            grid-auto-rows: 200px;
+        }
+
+        .box-1{
+            /* O grid column define o espaço que será ocupado pelo box na coluna. Onde, no exemplo abaixo, ele começa na linha 1 e vai ate a linha 4*/
+           grid-column: 1/4;
+           background: url('https://meups.com.br/wp-content/uploads/2022/05/FIFA-22-1.jpg');
+           background-size: cover;
+           
+        }
+
+        .box-2{
+            grid-column: 1/3;
+        }
+       
+
+        .box-4{
+             /* O grid row define o espaço que será ocupado pelo box na linha. Onde, no exemplo abaixo, ele começa na linha 3 e vai ate a linha 5*/
+            grid-row: 3/5 ;
+        }
+
+        .box-5{
+            grid-column: 2/4;
+        }
+
+        .box-7{
+            grid-row: 4/6;
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            
+        </div>
+        <div class="box box-2">
+            <p>Fifa 22 é um dos jogos mais jogados de 2022</p>
+        </div>
+        <div class="box box-3">
+            <ul>
+                <li> <a href="">home</a> </li>
+                <li><a href="">jogos</a> </li>
+                <li> <a href="">listas</a> </li>
+                <li> <a href="">contato</a> </li>
+            </ul>
+        </div>
+        <div class="box box-4">BOX-4</div>
+        <div class="box box-5">BOX-5</div>
+        <div class="box box-6">BOX-6</div>
+        <div class="box box-7">BOX-7</div>
+        <div class="box box-8">BOX-8</div>
+        <div class="box box-9">BOX-9</div>
+    </div>
+</body>
+</html>

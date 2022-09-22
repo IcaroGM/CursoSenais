@@ -1,0 +1,45 @@
+  html{
+    font-size: 20px;
+    color: black;
+    }
+  body{
+    text-align: center;
+    background: black;
+    margin: 5%;
+    position: center;
+    } 
+  h1{
+      color: #25be86;
+      font-size: 40px;
+      position: center;
+    }
+  h2{ 
+      color: #25be86;
+      font-size: 3
+        0px;
+      position: center;
+    }
+  #img-caption{
+    font-size: 30px;
+    }  
+
+.img{
+        width: max-content;
+        height: max-content;
+    }
+
+  p{
+    font: justify;
+    color: white;
+    text-align: justify;
+    }
+
+  a{
+    font: justify;
+    color: white;
+    text-align: justify;
+    }
+
+  img {
+    max-width: 100%;
+    }

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    gap: 50px;
+    margin: 4em;
+}
+
+#carrinho, #quantidade, #valor,#valorTotal{
+    margin: 3em;
+}
+/* 
+.hide{
+    opacity: 0;
+} */

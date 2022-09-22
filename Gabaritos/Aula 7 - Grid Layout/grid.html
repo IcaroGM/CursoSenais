@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        /* O seletor universal serve para aplicar as formataçoes em todos os elementos. Para trabalhar com o grid precisamo zerar a margin e padding do navegador e para uma melhor experiencia devemo colocar o box-sizng border box */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: #909090;
+            border: 2px solid black;
+            
+            padding: 10px;
+        }
+        /* Na minha classe container é onde será inicializado o grid layout, pois é nela que estao as boxes, todas as caixa do meu site */
+        .container{
+            
+            /* Para iniciar o grid layout, setamos o display para grid */
+            display: grid;
+            /* Propriedade para definir o tamanho de cada elemento na coluna. Posso deifinir os tamanhos com px, pt, % e etc, mas a medida padrao é a fraçao (fr). No comando abaixo como quero todos os boxes com o mesmo tamanho de 1fr, coloco um repeat 3x 1fr */
+            grid-template-columns:repeat(3,1fr);
+
+            /* Propriedade para definir o tamanho de cada elemento na linha. Posso deifinir os tamanhos com px, pt, % e etc, mas a medida padrao é a fraçao (fr). Quando eu mexo na linha, nao posso ter um tamanho ja pre difinido*/
+            /* grid-template-rows: 5fr 3fr 1fr; */
+
+            /* Definie um tamanho padrao para todas as boxes. minmax deixa a box responsiva, expandindo o box para que caiba o conteudo. Mas posso definir com qualquer medida de tamanho: px,pt,%,em e etc */
+            grid-auto-rows: minmax();
+        }
+    </style>
+</head>
+<body>
+
+    <!--  -->
+        <div class="container">
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates laborum consequatur nisi autem hiREEREWHREKHWKJRHWHREJWRHKRLWEJWREWRWERWc deserunt dicta, voluptatum iusto nihil, deleniti iure odit odio minus, nemo illo omnis ducimus dolore.</div>
+        </div>
+</body>
+</html>

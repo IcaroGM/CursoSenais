@@ -1,0 +1,46 @@
+html{
+    background-color: #610300;
+    max-width: 100%;
+}
+
+
+body{
+    background-image: url(/irlandes.jpg);
+}
+
+header{
+    margin: auto;
+    padding: 30px;
+    color: aliceblue;
+    background-color: hsl(2, 54%, 25%,0.8);
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    border-radius: 25px;
+}
+
+main{
+    color: aliceblue;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+div{
+    text-align: center;
+    width: 20%;
+    background-color: hsl(2, 100%, 34%,0.6);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 3%;
+
+}
+
+#poster{
+    padding: 40px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(126, 14, 14,0.9);
+    border-radius: 15px;
+}

@@ -1,0 +1,83 @@
+html{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(pink,white, rgb(218,24,132));
+    font-size: 1.25rem;
+}
+
+body{
+    
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin: 2%;
+    background-color: rgba(252, 252, 252, 0.795);
+    border-radius: 1rem;
+}
+    nav{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+        .logo {
+        width: 5.375rem;
+        height: 3.625rem;
+        }
+
+        .site{
+            width: 40px;
+            height: 40px;
+        }
+
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 1rem;
+}
+
+@media (min-width: 90em) {
+    .container{
+        grid-auto-flow: row;
+    }
+}
+    .SideBar{
+        background-color: rgba(217, 228, 238, 0.5);
+        border-radius: 1rem;
+        margin: 5%;
+        padding: 1rem;
+        display: grid;
+        
+    }
+
+
+    .Conteúdo{
+        margin: 2%;
+        padding: 1rem;
+        background-color: rgba(217, 228, 238, 0.5);
+        border-radius: 1rem;
+    }
+    .altimetria{
+        width: 80%;
+        height: 50%;
+    }
+    .ImgEtapa{
+        width: 80%;
+        height: 70%;
+    }
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    margin: 0.4rem;
+    padding: 1rem;
+    background-color: rgba(217, 228, 238, 0.5);
+    border-radius: 1rem;
+}

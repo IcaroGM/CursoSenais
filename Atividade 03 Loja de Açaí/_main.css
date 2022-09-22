@@ -1,0 +1,16 @@
+main{
+    background-color: var(--Azul);
+    border-radius: 30px;
+    padding: 10px; 
+    margin: auto;
+    text-align: center;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+.foto{
+    width: 10em;
+}

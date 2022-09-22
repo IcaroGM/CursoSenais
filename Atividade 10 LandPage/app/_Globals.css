@@ -1,0 +1,20 @@
+html{
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(pink,white, rgb(252, 87, 178));
+    font-size: 1.25rem;
+}
+
+body{
+    border: 1px ;
+    border-radius: 2rem;
+    margin: 0rem;
+}
+
+main{
+    margin: 5%;
+    border: 2%;
+}
